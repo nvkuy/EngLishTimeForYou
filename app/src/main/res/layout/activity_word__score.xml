@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_word__score"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nguyentuan.tracnghiem1.word.Word_ScoreActivity">
+
+    <TextView
+        android:id="@+id/tvEndOfWordTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BLUE"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Kết thúc"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvEndOfWordTraining"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf">
+
+            <TextView
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:text="Câu đúng:"
+                android:textSize="17.5dp"
+                android:textColor="@color/BLUE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="17.5dp"
+                android:textColor="@color/BLUE"
+                android:text="Câu sai:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="17.5dp"
+                android:textColor="@color/BLUE"
+                android:text="Câu chưa trả lời:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="17.5dp"
+                android:textColor="@color/BLUE"
+                android:text="Đánh giá:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf">
+
+            <TextView
+                android:textColor="@color/BLUE"
+                android:textSize="17.5dp"
+                android:padding="5dp"
+                android:text="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTrueAns"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:textColor="@color/BLUE"
+                android:textSize="17.5dp"
+                android:padding="5dp"
+                android:text="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFalseAns"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:textColor="@color/BLUE"
+                android:textSize="17.5dp"
+                android:padding="5dp"
+                android:text="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNoAns"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:textColor="@color/BLUE"
+                android:textSize="17.5dp"
+                android:padding="5dp"
+                android:text="Thuộc kĩ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescription"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/box"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="UselessLeaf">
+
+        <Button
+            android:layout_margin="15dp"
+            android:textSize="17dp"
+            android:text="Thoát"
+            android:textColor="@color/Whire"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_exit"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText,SpUsage" />
+
+        <Button
+            android:textSize="17dp"
+            android:textColor="@color/Whire"
+            android:text="Tiếp tục"
+            android:visibility="gone"
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_continue"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText,SpUsage" />
+
+        <Button
+            android:textColor="@color/Whire"
+            android:textSize="17dp"
+            android:text="Làm lại"
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_again"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,HardcodedText,SpUsage" />
+    </LinearLayout>
+
+
+</RelativeLayout>

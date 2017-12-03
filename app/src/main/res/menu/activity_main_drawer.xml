@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Trang chủ"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/dict"
+            android:icon="@drawable/search_icon"
+            android:title="Từ điển"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/score"
+            android:icon="@drawable/about"
+            android:title="Danh sách điểm"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/lythuyet"
+            android:icon="@drawable/ketqua"
+            android:title="12 thì tiếng Anh"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/word"
+            android:icon="@drawable/cauhoi"
+            android:title="Luyện từ vựng"
+            tools:ignore="HardcodedText" />
+    </group>
+    <item android:title="   Bài thi trắc nghiệm:"
+        tools:ignore="HardcodedText">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/bai1"
+                    android:icon="@drawable/tracnghiem"
+                    android:title="Bài 1" />
+                <item
+                    android:id="@+id/bai2"
+                    android:icon="@drawable/tracnghiem"
+                    android:title="Bài 2" />
+                <item
+                    android:id="@+id/bai3"
+                    android:icon="@drawable/tracnghiem"
+                    android:title="Bài 3" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
